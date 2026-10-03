@@ -1,0 +1,82 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ---------- 构建产物 ----------
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# ---------- 虚拟环境 ----------
+# uv 默认创建 .venv，锁文件 uv.lock 需要提交，不要忽略
+.venv/
+venv/
+ENV/
+env/
+.python-version
+
+# ---------- 测试与覆盖率 ----------
+.pytest_cache/
+.tox/
+.nox/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+*.cover
+.hypothesis/
+
+# ---------- 类型检查与静态分析缓存 ----------
+.mypy_cache/
+.dmypy.json
+.pytype/
+.ruff_cache/
+
+# ---------- 打包与发布 ----------
+*.egg
+.installed.cfg
+MANIFEST
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- 环境变量与密钥 ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---------- 生成数据 ----------
+# 仿真数据集体积可达数百 GB，一律不纳入版本管理
+output/
+data/
+*.jsonl
+*.parquet
+*.orc
+
+# ---------- 日志与临时文件 ----------
+*.log
+logs/
+*.tmp
+*.bak
+*.prof
+.tmp/
+
+# ---------- 编辑器与 IDE ----------
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---------- 操作系统 ----------
+.DS_Store
+Thumbs.db
+Desktop.ini
